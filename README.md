@@ -5,7 +5,9 @@ Design a NFA to recognize the following sets of strings: abc, abd, and aacd. Sup
 ## Requirements
 
 [Python 3](https://www.python.org/downloads/) 
+
 [Graphviz](https://graphviz.org/)
+
 [Virtual environment](https://pypi.org/project/virtualenv/)
 
 ## How to run?
