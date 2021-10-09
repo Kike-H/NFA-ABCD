@@ -121,3 +121,55 @@ python ./src/main.py
 |   {q0,q2,q3,q4}    | q1          | ∅           | {q3,q4}    | q4         |
 |   {q1,q2,q3,q4}    | q2          | {q2,q3}     | {q3,q4}    | q4         |
 |   {q0,q1,q2,q3,q4} | {q1,q2}     | {q2,q3}     | {q3,q4     | q4         |
+
+## Rename Subsets
+|      | a    | b    | c    | d    |
+| ---- | ---- | ---- | ---- | ---- |
+| A    | A    | A    | A    | A    |
+| → B  | C    | A    | A    | A    |
+| C    | D    | N    | A    | A    |
+| D    | A    | A    | P    | A    |
+| E    | A    | A    | A    | F    |
+| F    | A    | A    | A    | A    |
+| G    | K    | N    | A    | A    |
+| H    | C    | A    | P    | A    |
+| I    | C    | A    | A    | F    |
+| J    | C    | A    | A    | A    |
+| K    | D    | N    | P    | A    |
+| L    | D    | N    | A    | F    |
+| M    | D    | N    | A    | A    |
+| N    | A    | A    | P    | F    |
+| O    | A    | A    | P    | A    |
+| P    | A    | A    | A    | F    |
+| Q    | K    | N    | P    | A    |
+| R    | K    | N    | A    | F    |
+| S    | K    | N    | A    | A    |
+| T    | C    | A    | P    | F    |
+| U    | C    | A    | P    | A    |
+| V    | C    | A    | A    | F    |
+| W    | C    | N    | P    | F    |
+| X    | D    | N    | P    | A    |
+| Y    | D    | N    | A    | A    |
+| Z    | A    | A    | P    | F    |
+| AA   | K    | N    | P    | F    |
+| AB   | K    | N    | P    | A    |
+| AC   | K    | N    | A    | F    |
+| AD   | C    | A    | P    | F    |
+| AE   | D    | N    | P    | F    |
+| AF   | K    | N    | P    | F    |
+
+## Remove unused subsets
+
+|      | a    | b    | c    | d    |
+| ---- | ---- | ---- | ---- | ---- |
+| A    | A    | A    | A    | A    |
+| → B  | C    | A    | A    | A    |
+| C    | D    | N    | A    | A    |
+| D    | A    | A    | P    | A    |
+| *  F | A    | A    | A    | A    |
+| N    | A    | A    | * P  | * F  |
+| * P  | A    | A    | A    | * F  |
+
+## Graph
+
+![Graph-2](./.assets/graph_2.png "Graph 2")
