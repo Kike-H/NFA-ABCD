@@ -83,6 +83,23 @@ python ./src/main.py
 |    q3      | ∅           | ∅           | ∅          | * q4       |
 | *  q4      | ∅           | ∅           | ∅          | ∅          |
 
+### Code
+```python
+nfa = NFA(
+        states={'q0', 'q1', 'q2', 'q3', 'q4'},
+        input_symbols={'a', 'b', 'c', 'd'},
+        transitions={
+            'q0':{'a':{'q1'}},
+            'q1':{'b':{'q2', 'q3'}, 'a':{'q2'}},
+            'q2':{'c':{'q3', 'q4'}},
+            'q3':{'d':{'q4'}},
+            'q4':{}
+            },
+        initial_state='q0',
+        final_states={'q4'}
+)
+```
+
 ## Equivalence of NFA to DFA
 
 ### Subsets
